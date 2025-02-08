@@ -1,4 +1,4 @@
-### Panduan Praktikum P. Web CodeIgniter 4
+## Panduan Praktikum P. Web CodeIgniter 4
 1.	Unduh package codeigniter4, ekstrak ambil folder yang di dalam lalu rename dengan **nama_aplikasi** dan simpan pada folder htdocs.
 2.	Buka file app/Config/Routes.php ubah kodenya dengan kode berikut (Routes.php)
 3.	Rename file env menjadi .env lalu ubah seluruh isinya dengan kode berikut (.env)
