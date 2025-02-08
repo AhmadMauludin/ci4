@@ -13,7 +13,7 @@ class Barang extends Controller
         $data['title']     = 'Data Barang';
         $data['getBarang'] = $model->getBarang();
         echo view('header_view', $data);
-        echo view('barang_view', $data);
+        echo view('barang/barang_view', $data);
         echo view('footer_view', $data);
     }
 
@@ -21,7 +21,7 @@ class Barang extends Controller
     {
         $data['title']     = 'Tambah Data Barang';
         echo view('header_view', $data);
-        echo view('tambah_view', $data);
+        echo view('barang/tambah_view', $data);
         echo view('footer_view', $data);
     }
 
@@ -50,7 +50,7 @@ class Barang extends Controller
             $data['title']  = 'Edit ' . $getBarang->nama_barang;
 
             echo view('header_view', $data);
-            echo view('edit_view', $data);
+            echo view('barang/edit_view', $data);
             echo view('footer_view', $data);
         } else {
 
