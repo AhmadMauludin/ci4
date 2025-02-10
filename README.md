@@ -12,3 +12,6 @@
 10.	Buat 2 file pada folder app/Views bernama header_view.php dan footer_view.php isikan dengan kode berikut (header_view.php dan footer_view.php)
 11.	Buat folder baru bernama **barang** di dalam folder app/Views
 12.	Buat 3 file baru pada folder barang tersebut berupa : barang_view.php edit_view.php dan tambah_view.php Masukan kode berikut ke dalam file sesuai dengan nama filenya.
+13.	Buat database baru bernama ci4_barang.sql (atau sesuai nama database pada file .env)
+14.	Unduh file database bernama ci4_barang.sql lalu import ke dalam database yang sudah dibuat
+15. Jalankan aplikasi di browser dengan memanggil localhost/nama_aplikasi
