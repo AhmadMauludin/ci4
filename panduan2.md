@@ -97,6 +97,7 @@ Kita perlu membuat controller untuk menampilkan halaman-halaman tersebut.
 Buat di folder app/Controllers/PageController.php
 
 ```
+<?php
 namespace App\Controllers;
 use CodeIgniter\Controller;
 class PageController extends Controller
