@@ -15,15 +15,16 @@ app/
 │   │   ├── home.php
 │   │   ├── about.php
 
-```layouts/main.php → Template utama
+layouts/main.php → Template utama
 pages/home.php → Konten halaman Home
-pages/about.php → Konten halaman About```
+pages/about.php → Konten halaman About
 
 3. Membuat Layout Utama (main.php)
 File ini berfungsi sebagai template utama yang akan digunakan oleh halaman-halaman lainnya.
 
-Buat di folder ```app/Views/layouts/main.php
+Buat di folder app/Views/layouts/main.php
 
+```
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -59,15 +60,15 @@ Penjelasan:
 
 4. Membuat Halaman Home (home.php)
 Halaman ini akan menggunakan layout utama (main.php) dan hanya mengisi bagian content.
-buat di folder ```app/Views/pages/home.php
+buat di folder app/Views/pages/home.php
 
-
+```
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
     <h2>Welcome to Home Page</h2>
     <p>Ini adalah halaman utama website.</p>
-<?= $this->endSection() ?>```
-
+<?= $this->endSection() ?>
+```
 Penjelasan:
 ```<?= $this->extend('layouts/main') ?> ```→ Menentukan bahwa halaman ini menggunakan template main.php.
 
@@ -78,21 +79,22 @@ Penjelasan:
 5. Membuat Halaman About (about.php)
 Halaman About juga menggunakan layout yang sama tetapi memiliki isi yang berbeda.
 
-Buat di folder ```app/Views/pages/about.php
+Buat di folder app/Views/pages/about.php
 
-
+```
 <?= $this->extend('layouts/main') ?>
 <?= $this->section('content') ?>
     <h2>About Us</h2>
     <p>Ini adalah halaman tentang kami.</p>
 <?= $this->endSection() ?>```
+```
 
 6. Menampilkan Halaman di Controller
 Kita perlu membuat controller untuk menampilkan halaman-halaman tersebut.
 
-Buat di folder ```app/Controllers/PageController.php
+Buat di folder app/Controllers/PageController.php
 
-
+```
 namespace App\Controllers;
 use CodeIgniter\Controller;
 class PageController extends Controller
@@ -118,7 +120,8 @@ Menggunakan ```view('pages/home', ['title' => 'Home'])``` untuk mengisi variabel
 Tambahkan route ke dalam app/Config/Routes.php untuk mengakses halaman.
 ```
 $routes->get('/', 'PageController::home');
-$routes->get('/about', 'PageController::about');```
+$routes->get('/about', 'PageController::about');
+```
 
 8. Kesimpulan
 Extend content di CodeIgniter 4 memungkinkan kita membuat template utama dan menggunakan ulang layout di berbagai halaman.
