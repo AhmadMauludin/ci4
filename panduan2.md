@@ -16,7 +16,9 @@ app/
 │   │   ├── about.php
 ```
 layouts/main.php → Template utama
+
 pages/home.php → Konten halaman Home
+
 pages/about.php → Konten halaman About
 
 3. Membuat Layout Utama (main.php)
