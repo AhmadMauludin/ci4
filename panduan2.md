@@ -5,7 +5,7 @@ Dalam pengembangan aplikasi web dengan CodeIgniter 4, sering kali kita perlu men
 
 2. Konsep Extend Content di CodeIgniter 4
 Extend content dalam CodeIgniter 4 dapat dilakukan dengan cara membuat template utama dan menggunakan view yang dapat mengisi kontennya. Teknik ini sangat berguna untuk menjaga konsistensi tampilan dan mengurangi duplikasi kode.
-
+```
 Struktur Folder:
 app/
 ├── Views/
@@ -14,7 +14,7 @@ app/
 │   ├── pages/
 │   │   ├── home.php
 │   │   ├── about.php
-
+```
 layouts/main.php → Template utama
 pages/home.php → Konten halaman Home
 pages/about.php → Konten halaman About
